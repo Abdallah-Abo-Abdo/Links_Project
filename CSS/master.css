@@ -1,0 +1,56 @@
+body {
+  background-color: rgb(228, 215, 183);
+  transition: opacity 1s;
+  margin: 0;
+  padding: 0;
+}
+#main-svg {
+  background-image: url("../imgs/Gaza01.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.all-circles circle {
+  fill: green;
+  stroke: red;
+  stroke-width: 1;
+  r: 8;
+  transition: 0.6s;
+}
+.all-circles circle:hover {
+  stroke: red;
+  stroke-width: 5;
+  cursor: pointer;
+}
+
+.all-lines line {
+  stroke: green;
+  stroke-width: 4;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.all-lines line:hover {
+  stroke: green;
+  stroke-width: 10;
+}
+
+.rect-lines line {
+  stroke-width: 5;
+  transition: 0.5s;
+}
+.rect-lines line:hover {
+  stroke-width: 12;
+}
+
+.shape {
+  fill: rgb(105, 155, 105);
+  stroke: red;
+  stroke-width: 1;
+}
+
+rect {
+  fill: rgb(228, 215, 183);
+}
+
+/* ================================================= */
