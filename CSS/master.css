@@ -26,13 +26,16 @@ body {
 .all-lines line {
   stroke: green;
   stroke-width: 4;
-  transition: 0.3s;
+  transition: 1s;
   cursor: pointer;
 }
 
 .all-lines line:hover {
-  stroke: green;
-  stroke-width: 10;
+  stroke: red;
+}
+
+rect {
+  fill: rgb(228, 215, 183);
 }
 
 .rect-lines line {
@@ -43,14 +46,28 @@ body {
   stroke-width: 12;
 }
 
-.shape {
+.rect .shape {
   fill: rgb(105, 155, 105);
   stroke: red;
   stroke-width: 1;
 }
 
-rect {
-  fill: rgb(228, 215, 183);
+.rect_02 .shape {
+  fill: rgb(180, 190, 180);
+  stroke: red;
+  stroke-width: 1;
+}
+
+.Truns_01 {
+  transition: 2s;
+  transform: scale(4, 4) rotate(20deg);
+  opacity: 0;
+}
+
+.Truns_02 {
+  transition: 2s;
+  transform: scale(0, 0);
+  opacity: 0;
 }
 
 /* ================================================= */

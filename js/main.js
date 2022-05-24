@@ -3,8 +3,15 @@ document.addEventListener("click", function handleClickOutsideBox(event) {
   console.log("user clicked: ", event.target);
 });
 
-window.transitionToPage = function (href) {
-  document.querySelector("body").style.opacity = 0;
+window.Truns_01 = function (href) {
+  document.querySelector("body").classList.add("Truns_01");
+  setTimeout(function () {
+    window.location.href = href;
+  }, 1000);
+};
+
+window.Truns_02 = function (href) {
+  document.querySelector("body").classList.add("Truns_02");
   setTimeout(function () {
     window.location.href = href;
   }, 1000);
@@ -15,15 +22,19 @@ jQuery(document).ready(function () {
   var scroll_zoom = new ScrollZoom($(".Zoom"), 4, 0.05);
 
   jQuery(".all-lines line").click(function () {
-    transitionToPage("./Rect.html");
+    Truns_01("./Rect.html");
   });
 
-  jQuery(".rect").blur(function () {
-    transitionToPage("./index.html");
+  jQuery(".rect .shape").click(function () {
+    Truns_02("./index.html");
   });
 
-  jQuery(".shape").click(function () {
-    transitionToPage("./index.html");
+  jQuery(".rect .rect-lines").click(function () {
+    Truns_01("./Rect_02.html");
+  });
+
+  jQuery(".rect_02 .shape").click(function () {
+    Truns_02("./Rect.html");
   });
 
   jQuery(".R-circles").click(function () {
